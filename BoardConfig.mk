@@ -25,6 +25,8 @@ BOARD_KERNEL_BASE := 0x19200000
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 
+BOARD_HAVE_FM_RECEIVER := false
+
 TARGET_HARDWARE_3D := false
 
 BOARD_GPS_LIBRARIES := libgps librpc
@@ -37,10 +39,25 @@ BOARD_USE_HTC_APPS := true
 
 BOARD_USE_HERO_LIBSENSORS := true
 
+BOARD_USES_QCOM_HARDWARE := true
+
+# HTC Hero GSM:
+# -------------
+# % adb shell cat /proc/mtd
+# dev:    size   erasesize  name
+# mtd0: 00040000 00020000 "misc"
+# mtd1: 00500000 00020000 "recovery"
+# mtd2: 00280000 00020000 "boot"
+# mtd3: 0aa00000 00020000 "system"
+# mtd4: 08200000 00020000 "cache"
+# mtd5: 0a5c0000 00020000 "userdata"
+
 BOARD_BOOTIMAGE_MAX_SIZE := $(call image-size-from-data-size,0x00280000)
 BOARD_RECOVERYIMAGE_MAX_SIZE := $(call image-size-from-data-size,0x00500000)
-BOARD_SYSTEMIMAGE_MAX_SIZE := $(call image-size-from-data-size,0x05a00000)
-BOARD_USERDATAIMAGE_MAX_SIZE := $(call image-size-from-data-size,0x127c0000)
+BOARD_SYSTEMIMAGE_MAX_SIZE := $(call image-size-from-data-size,0x0aa00000)
+BOARD_USERDATAIMAGE_MAX_SIZE := $(call image-size-from-data-size,0x0a5c0000)
 
 # The size of a block that can be marked bad.
 BOARD_FLASH_BLOCK_SIZE := 131072
+
+WITH_JIT := true
