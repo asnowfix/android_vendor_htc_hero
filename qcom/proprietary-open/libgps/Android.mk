@@ -1,7 +1,7 @@
 LOCAL_PATH:= $(call my-dir)
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/libgps.so:/system/lib/libgps.so \
+    $(LOCAL_PATH)/proprietary/libgps.so:/system/lib/libgps.so
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libgps.so
@@ -9,5 +9,5 @@ LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
 LOCAL_SRC_FILES := proprietary/$(LOCAL_MODULE)
 OVERRIDE_BUILT_MODULE_PATH := $(TARGET_OUT_INTERMEDIATE_LIBRARIES)
-#include $(BUILD_PREBUILT)
+include $(BUILD_PREBUILT)
 
