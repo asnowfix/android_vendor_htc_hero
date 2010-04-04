@@ -2,12 +2,11 @@ LOCAL_PATH:= $(call my-dir)
 
 # Use PRODUCT_COPY_FILES to override the build target.
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/adspsvc.so:/system/lib/adspsvc.so \
+    $(LOCAL_PATH)/proprietary/libmm-adspsvc.so:/system/lib/libmm-adspsvc.so \
     $(LOCAL_PATH)/proprietary/libOmxCore.so:/system/lib/libOmxCore.so \
     $(LOCAL_PATH)/proprietary/libOmxH264Dec.so:/system/lib/libOmxH264Dec.so \
     $(LOCAL_PATH)/proprietary/libOmxMpeg4Dec.so:/system/lib/libOmxMpeg4Dec.so \
     $(LOCAL_PATH)/proprietary/libOmxVidEnc.so:/system/lib/libOmxVidEnc.so 
-    
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libmm-adspsvc.so
