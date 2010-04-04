@@ -22,7 +22,6 @@ unzip -j -d proprietary -o ../../../$ZIP \
 	system/etc/wifi/Fw1251r1c.bin \
 	system/lib/libhtc_acoustic.so \
 	system/lib/libhtc_ril.so \
-	system/lib/hw/sensors.hero.so \
 	system/usr/keychars/hero-keypad.kcm.bin \
 	system/lib/egl/egl.cfg \
 	system/lib/egl/libGLES_qcom.so \
