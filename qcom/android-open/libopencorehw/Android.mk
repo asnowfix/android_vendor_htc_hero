@@ -1,7 +1,8 @@
 LOCAL_PATH := $(call my-dir)
 
-# Use PRODUCT_COPY_FILES to override the build target.
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/proprietary/libopencorehw.so:/system/lib/libopencorehw.so
+#FIXME: try to build the version from qcom's opencore
+## Use PRODUCT_COPY_FILES to override the build target.
+#PRODUCT_COPY_FILES += $(LOCAL_PATH)/proprietary/libopencorehw.so:/system/lib/libopencorehw.so
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libopencorehw.so
