@@ -9,26 +9,34 @@ else
 fi
 
 unzip -j -d proprietary -o ../../../$ZIP \
+	system/app/HTC_IME.apk \
+	system/lib/libt9.so \
 	system/etc/AudioFilter.csv \
 	system/etc/AudioPara4.csv \
 	system/etc/AudioPreProcess.csv \
-	system/etc/firmware/tiinit_5.3.53.bts \
    	system/etc/firmware/avpr.bts \
 	system/etc/firmware/brf6300.bin \
-	system/etc/firmware/fmc_init_1273.2.bts \
+	system/etc/firmware/brf6350.bin \
 	system/etc/firmware/fm_rx_init_1273.2.bts \
+	system/etc/firmware/fmc_init_1273.2.bts \
+	system/etc/firmware/TIInit_4.2.38.bts \
+	system/etc/firmware/tiinit_5.3.53.bts \
 	system/etc/firmware/vac_config.ini \
 	system/etc/gps.conf \
 	system/etc/wifi/Fw1251r1c.bin \
 	system/lib/libhtc_acoustic.so \
 	system/lib/libhtc_ril.so \
-	system/usr/keychars/hero-keypad.kcm.bin \
+	system/lib/libhtcbitmapfactory.so \
 	system/lib/egl/egl.cfg \
 	system/lib/egl/libGLES_qcom.so \
 	system/lib/libGLESv1_CM.so \
-	system/lib/libGLESv2.so
+	system/lib/libGLESv2.so \
+	system/usr/keychars/hero-keypad.kcm.bin
 
 touch proprietary/*
+
+(./unzip-flash.sh $ZIP)
+(./unzip-google.sh $ZIP)
 
 (cd ../../htc/common-open/akmd && ./unzip-files.sh $ZIP)
 (cd ../../htc/prebuilt-open && ./unzip-files.sh $ZIP)
