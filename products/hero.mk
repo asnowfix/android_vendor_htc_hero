@@ -53,10 +53,11 @@ WITH_DEXPREOPT_buildbot := true
 
 # Build WebKit with V8
 JS_ENGINE:=v8
- 
+
+# FIXME: put modules into the boot image
 # Used by BusyBox
 KERNEL_MODULES_DIR:=/system/lib/modules
-   
+
 USE_CAMERA_STUB := false
 
 PRODUCT_PACKAGES := \
