@@ -107,7 +107,7 @@ PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     libRS \
     librs_jni
-    
+
 PRODUCT_PACKAGES += Superuser
 
 # Build WebKit with V8
@@ -118,9 +118,9 @@ include frameworks/base/data/sounds/AudioPackage4.mk
 
 PRODUCT_COPY_FILES += \
     vendor/htc/hero/prebuilt/system/lib/libspeech.so:system/lib/libspeech.so \
+    vendor/htc/hero/fstab:system/etc/fstab \
     vendor/cyanogen/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml \
     vendor/cyanogen/prebuilt/common/etc/dnsmasq.conf:system/etc/dnsmasq.conf \
-    vendor/cyanogen/prebuilt/common/etc/fstab:system/etc/fstab \
     vendor/cyanogen/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
     vendor/cyanogen/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
     vendor/cyanogen/prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
