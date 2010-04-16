@@ -200,7 +200,6 @@ include external/svox/pico/lang/PicoLangFrFrInSystem.mk
 include external/svox/pico/lang/PicoLangItItInSystem.mk
 
 PRODUCT_LOCALES := \
-    en_US \
     ar_EG \
     ar_IL \
     bg_BG \
@@ -219,6 +218,7 @@ PRODUCT_LOCALES := \
     en_IN \
     en_NZ \
     en_SG \
+    en_US \
     en_ZA \
     es_ES \
     es_US \
