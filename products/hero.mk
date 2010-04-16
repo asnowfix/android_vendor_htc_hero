@@ -259,7 +259,8 @@ PRODUCT_LOCALES := \
     zh_CN \
     zh_TW
 
-#PRODUCT_COPY_FILES +=  \
-#    vendor/cyanogen/prebuilt/passion/media/bootanimation.zip:system/media/bootanimation.zip
+# Google Nexus One Bootanimation files
+PRODUCT_COPY_FILES +=  \
+    vendor/cyanogen/prebuilt/passion/media/bootanimation.zip:system/media/bootanimation.zip
 
 
