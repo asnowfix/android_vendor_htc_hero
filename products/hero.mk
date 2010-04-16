@@ -137,11 +137,11 @@ PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/common/bin/usb-tether:system/bin/usb-tether \
     vendor/cyanogen/prebuilt/common/bin/shutdown:system/bin/shutdown \
     vendor/cyanogen/prebuilt/common/bin/compcache:system/bin/compcache
-    
+
 ifdef WITH_HTC_KEYBOARD
     PRODUCT_COPY_FILES += \
-        vendor/cyanogen/proprietary/HTC_IME.apk:system/app/HTC_IME.apk \
-	    vendor/cyanogen/proprietary/libt9.so:system/lib/libt9.so
+        vendor/htc/hero/proprietary/HTC_IME.apk:system/app/HTC_IME.apk \
+        vendor/htc/hero/proprietary/libt9.so:system/lib/libt9.so
 endif
 
 ifdef WITH_GOOGLE
