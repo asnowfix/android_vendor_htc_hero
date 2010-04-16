@@ -37,9 +37,18 @@ USE_PV_WINDOWS_MEDIA := false
 
 BOARD_USE_HTC_APPS := true
 
+HTC_RIL_VERSION := 2.0.0053HM
+
 BOARD_USE_HERO_LIBSENSORS := true
 
+# true when board is Qualcomm-based
 BOARD_USES_QCOM_HARDWARE := true
+
+# true when board is a Qualcomm reference hardware (SURF & FFA boards)
+BOARD_USES_QCOM_REF_HARDWARE := false
+
+# Qualcomm-proprietary camera library file name
+BOARD_LIBQCAMERA := liboemcamera
 
 # HTC Hero GSM:
 # -------------

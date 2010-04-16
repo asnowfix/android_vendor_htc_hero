@@ -11,7 +11,7 @@ $(file): $(TARGET_PREBUILT_KERNEL) | $(ACP)
 
 file := $(TARGET_OUT)/lib/libhtc_ril.so
 ALL_PREBUILT += $(file)
-$(file) : $(LOCAL_PATH)/proprietary/libhtc_ril.so | $(ACP)
+$(file) : $(LOCAL_PATH)/proprietary/libhtc_ril.so-$(HTC_RIL_VERSION) | $(ACP)
 	$(transform-prebuilt-to-target)
 
 file := $(TARGET_OUT)/lib/libhtc_acoustic.so
@@ -53,7 +53,7 @@ file := $(TARGET_OUT)/etc/firmware/fm_rx_init_1273.2.bts
 ALL_PREBUILT += $(file)
 $(file) : $(LOCAL_PATH)/proprietary/tiinit_5.3.53.bts | $(ACP)
 	$(transform-prebuilt-to-target)
-	
+
 file := $(TARGET_OUT)/etc/firmware/tiinit_5.3.53.bts
 ALL_PREBUILT += $(file)
 $(file) : $(LOCAL_PATH)/proprietary/tiinit_5.3.53.bts | $(ACP)
